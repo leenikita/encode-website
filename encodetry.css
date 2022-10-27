@@ -1,0 +1,391 @@
+nav {
+	background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 1174px;
+}
+li {
+	list-style: none;
+	padding: 32px;
+	font-family: 'Amatic SC', cursive;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    
+}
+nav b {
+	transition: all .3s ease;
+}
+nav b:hover {
+	transform: scale(1.04);
+	color: white;
+	background-color: #20BF5C;
+	padding: 12px 15px;
+	border-radius: 30px;
+}
+.logo img {
+	width: 90px;
+	margin: -20px;
+}
+.logo {
+	margin-right: auto;
+}	
+.call {
+	font-size: 20px;
+	margin-left: auto;
+}
+.green {
+	color: green;
+}
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#one .child {
+	justify-content: center;
+	align-items: center;
+	margin-top: 90px;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	font-family: 'Amatic SC', cursive;
+	padding: 20px 20px;
+}
+#one .child p {
+	font-size: 20px;
+	padding: 22px;
+}
+#one .child h1 {
+	text-align: center;
+}
+#one button {
+background-color: rgba(0,0,0,0.1);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    border-color: #20BF5C;
+    transition: all .3s ease;
+    display: flex;
+}
+#one button:hover {
+	background-color: #20BF5C;
+	color: white;
+	border-color: white;
+}
+#one {
+	background-image: url(https://d3n8a8pro7vhmx.cloudfront.net/seedyourfuture/pages/235/attachments/original/1547062965/ITSpecialistMainEdited.jpg?1547062965);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+.parent-main, .parentsecond {
+	display: flex;
+}
+
+
+
+#two .container {
+	width: 1174px;
+	margin: auto;
+}
+
+/*#two .child1, #two .child2, #two .child3, #two .child4 {
+	margin: 12px;
+}*/
+
+.child1, .child4 {
+	margin: 35px 250px;
+}
+
+@media screen and (max-width: 768px) {
+	.child1, .child4, .child2, .child3 {
+		margin: 12px!important;
+	}
+	#pc-nav {
+		display: none;
+	}
+	.container, .parent, ul {
+		width: 100% !important; height: 100%; 
+	}
+	.parent.child button {
+     width: calc(100%/3)
+	}
+	.child {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.childfirst {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	#one {
+		height: 100vh!important;
+		background-position: 76% 70%;
+	}
+	#two {
+		height: 100%!important;
+		background-position: 76% 70%;
+	}
+	ul {
+		flex-wrap: wrap;
+		height: 100%!important;
+	}
+	.parent {
+		flex-wrap: wrap;
+		height: 100%!important;
+	}
+	.parent-main {
+		flex-wrap: wrap;
+		height: 100%!important;
+	}
+	.parentfirst {
+		flex-wrap: wrap;
+		height: 100%!important;
+	}
+	.parentsecond {
+		flex-wrap: wrap;
+		height: 100%!important;
+	}
+	.child1 {
+	 	margin: 0;
+	 	    width: 100%!important;
+		flex-wrap: wrap;   	
+	}
+	.child2 {
+	 	margin: 0;
+	 	    width: 100%!important;
+		flex-wrap: wrap;   	
+	}
+	.child3 {
+	 	margin: 0;
+	 	    width: 100%!important;
+		flex-wrap: wrap;   	
+	}
+	.child4 {
+	 	margin: 0;
+	 	    width: 100%!important;
+		flex-wrap: wrap;   	
+	}
+	#mobile-nav {
+		display: flex!important;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
+	}
+	#mobile-nav ul {
+		width: 100%;
+	}
+	#mobile-nav button {
+		background-color: transparent;
+		color: green;
+		font-size: 25px;
+		margin: 0;
+	}
+	footer {
+		height: 100%!important;
+	}
+}
+#mobile-nav {
+	display: none;
+	position: relative;
+}
+.ulContainer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	height: 100vh!important;
+	left: -100%;
+	z-index: 9999;
+	top: 0;
+	transition: all .3s ease;
+}
+#close-btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border-radius: 100%;
+	padding: 12px;
+}
+#open-btn {
+	background-color: red;
+	padding: 12px;
+    border-radius: 100%;
+}
+#ul {
+	position: relative;
+}
+#two {
+	background-color: whitesmoke;
+	font-family: 'Amatic SC', cursive;
+	height: 140vh;
+}
+#two img {
+	width: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.child1 {
+    background-color: white;
+    width: 30%;
+    
+    border-radius: 30px;
+    text-align: center;
+    border-color: #20BF5C;
+    transition: all .3s ease;
+}
+.child2 {
+    background-color: white;
+    width: 30%;
+    
+    border-radius: 30px;
+    text-align: center;
+    border-color: #20BF5C;
+    transition: all .3s ease;
+}
+.child3 {
+    background-color: white;
+    width: 30%;
+    
+    border-radius: 30px;
+    text-align: center;
+    border-color: #20BF5C;
+    transition: all .3s ease;
+}
+.child4 {
+    background-color: white;
+    width: 30%;
+    
+    border-radius: 30px;
+    text-align: center;
+    border-color: #20BF5C;
+    transition: all .3s ease; 
+}
+/*#two .parentsecond {
+	margin: 50px;
+}*/
+#two .childfirst {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 220px;
+}
+#two .childsecond {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 220px;
+}
+#two .parentfirst {
+	justify-content: center;
+	align-items: center;
+}
+/*.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}*/
+.container h1 {
+    font-size: 30px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 4px solid #20BF5C;
+}
+#two b {
+	background-color: #20BF5C;
+	padding: 12px 30px;
+	margin: 10px;
+}
+.child1:hover {
+    transform: scale(1.04);
+}
+.child2:hover {
+    transform: scale(1.04);
+}
+.child3:hover {
+    transform: scale(1.04);
+}
+.child4:hover {
+    transform: scale(1.04);
+}
+#three img {
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px;
+}
+#three .parent {
+    justify-content: center;
+    align-items: center;
+}
+#three {
+	font-family: 'Amatic SC', cursive;
+}
+#three .child{
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 6px solid #20BF5C;
+	background-color: whitesmoke;
+}
+#three h2 {
+	margin: 15px;
+}
+#three p {
+	margin: 10px;
+}
+footer {
+	background-color: black;
+	font-family: 'Amatic SC', cursive;
+	height: 40vh;
+}
+footer h2 {
+	color: #20BF5C;
+}
+footer p {
+	color: white;
+}
+.fa-instagram {
+    color: purple;
+}
+.fa-youtube {
+	color: red;
+}
+.fa-telegram {
+    color: #56C3E6;
+}
+.fa-facebook {
+    color: #275D6E;
+}
+footer .parent {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+footer .child {
+	text-align: center;
+	font-size: 20px;
+	margin: 70px;
+}
+
+.social {
+	display: flex;
+	justify-content: space-around;
+}
